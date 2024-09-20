@@ -232,11 +232,22 @@ for image in subject_images_fha:
 
 ######################################## BLIP2 VQA #####################################################
 
+# need to fine-tine blip2 on kaggle home data - it thinks every house is in good condition and nothing is wrong when clearly there is a big difference
+
 # for item in labeled_images_sf:
 #     pil_image = item['image']
 #     label = item['label']
-#     response = answer_prompt(pil_image, "Question: Note if there is any wall damage, furniture, mold or other special attributes. Answer:")
+#     response = answer_prompt(pil_image, "Question: Is there is any wall damage, furniture, mold or other special attributes. Answer:")
 #     print(response)
+
+
+
+# for item in labeled_images_fha:
+#     pil_image = item['image']
+#     label = item['label']
+#     response = answer_prompt(pil_image, "Question: Is there any furniture in the room? Answer:")
+#     print(response)
+
 
 --
 
